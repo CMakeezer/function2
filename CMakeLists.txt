@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 project(function2 VERSION 2.2.0 LANGUAGES CXX)
 
+set(CMAKE_CXX_STANDARD 17)
+find_package(GTest REQUIRED)
+
 add_library(function2 INTERFACE)
 add_library(function2::function2 ALIAS function2)
 
